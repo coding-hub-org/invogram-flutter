@@ -1,4 +1,4 @@
-package com.example.invogram
+package com.codinghub.invogram
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
