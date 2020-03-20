@@ -15,7 +15,7 @@ class InvogramApp extends StatelessWidget {
         Routes.login.name: (context) => Routes.login.widget,
         Routes.signUp.name: (context) => Routes.signUp.widget,
       },
-      home: Routes.reminder.widget,
+      home: Routes.login.widget,
     );
   }
 }

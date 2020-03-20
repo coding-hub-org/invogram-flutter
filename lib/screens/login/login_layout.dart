@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:invogram/screens/login/login_form.dart';
 
 /// TODO: implement this
 class LoginLayout extends StatelessWidget {
@@ -6,6 +7,19 @@ class LoginLayout extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(
+        title: Container(
+          child: Text(
+            'Welcome to Invogram',
+          ),
+        ),
+      ),
+      body: Padding(
+        padding: EdgeInsets.all(20),
+        child: LoginForm(),
+      ),
+    );
   }
 }
