@@ -12,7 +12,7 @@ class AuthenticateState extends ChangeNotifier {
   }
 
   static FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
-  static FirebaseUser _user;
+  FirebaseUser _user;
 
   Future<String> signIn(String email, String password) async {
     try {
