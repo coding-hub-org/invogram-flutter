@@ -31,7 +31,7 @@ class LoginForm extends StatelessWidget {
           child: RaisedButton(
             elevation: 10,
             color: Colors.blue,
-            onPressed: () {
+            onPressed: (loading) ? null : () {
               onClickSignInButton();
             },
             child: Text(

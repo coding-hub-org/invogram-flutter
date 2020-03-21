@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:invogram/providers/authentication_state.dart';
 import 'package:invogram/screens/login/login_layout.dart';
 
-import '../routes.dart';
-
 /// TODO: implement this
 class LoginScreen extends StatefulWidget {
   LoginScreen({Key key}) : super(key: key);
@@ -55,8 +53,9 @@ class _LoginScreenState extends State<LoginScreen> {
       } else {
         setState(() {
           error = '';
+          loading = false;
         });
-        Navigator.pushNamed(context, Routes.reminder.name);
+//        Navigator.pushNamed(context, Routes.reminder.name);
       }
     }
     setState(() {
@@ -84,7 +83,9 @@ class _LoginScreenState extends State<LoginScreen> {
             showPassword: showPassword,
             onChangeEmail: onChangeEmail,
             onChangePassword: onChangePassword,
-            onClickSignInButton: () {onClickSignInButton(context);},
+            onClickSignInButton: () {
+              onClickSignInButton(context);
+            },
             onToggleShowPassword: onToggleShowPassword,
           );
         },

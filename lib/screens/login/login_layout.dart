@@ -32,7 +32,7 @@ class LoginLayout extends StatelessWidget {
         loading: loading,
         showPassword: showPassword,
         onChangeEmail: onChangeEmail,
-        onChangePassword: onChangeEmail,
+        onChangePassword: onChangePassword,
         onClickSignInButton: onClickSignInButton,
         onToggleShowPassword: onToggleShowPassword,
       ),
