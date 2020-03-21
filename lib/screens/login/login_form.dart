@@ -31,9 +31,7 @@ class LoginForm extends StatelessWidget {
           child: RaisedButton(
             elevation: 10,
             color: Colors.blue,
-            onPressed: (loading) ? null : () {
-              onClickSignInButton();
-            },
+            onPressed: (loading) ? null : onClickSignInButton,
             child: Text(
               'Sign In',
               style: TextStyle(fontSize: 30, color: Colors.white),
@@ -56,7 +54,7 @@ class LoginForm extends StatelessWidget {
             style: TextStyle(
               decoration: TextDecoration.underline,
               decorationColor: Colors.blue,
-              fontSize: 20,
+//              fontSize: 20,
             ),
           ),
         ),
@@ -76,7 +74,7 @@ class LoginForm extends StatelessWidget {
             style: TextStyle(
               decoration: TextDecoration.underline,
               decorationColor: Colors.blue,
-              fontSize: 20,
+//              fontSize: 20,
             ),
           ),
         ),

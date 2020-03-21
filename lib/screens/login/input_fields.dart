@@ -23,9 +23,7 @@ class EmailField extends StatelessWidget {
             return 'Email is not valid';
           }
         },
-        onChanged: (String value) {
-          onChangeEmail(value);
-        },
+        onChanged: onChangeEmail,
         enabled: !loading,
       ),
     );
@@ -53,12 +51,10 @@ class PasswordField extends StatelessWidget {
             labelText: 'Password',
             suffixIcon: IconButton(
               icon: Icon(!showPassword ? Icons.visibility : Icons.visibility_off),
-              onPressed: () => onToggleShowPassword(),
+              onPressed: onToggleShowPassword,
             )),
         validator: (value) => value.isEmpty ? 'Password can\'t be empty' : null,
-        onChanged: (value) {
-          onChangePassword(value);
-        },
+        onChanged: onChangePassword,
         obscureText: !showPassword,
         enabled: !loading,
       ),
